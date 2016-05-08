@@ -18,7 +18,7 @@ define(function(require,exports,module) {
                 var data = {
                     tel:$('.phone').val(),
                     qq:$('.qq').val()
-                }
+                };
                 if(data.tel.length <= 0) {
                     $('.noAlert').show().html('请输入手机号！');
                     $('.mask').show();
