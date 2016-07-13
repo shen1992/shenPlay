@@ -1,0 +1,46 @@
+{
+  "name": "mqq",
+  "version": "0.0.1",
+  "description": "Wepiao X MobileQQ",
+  "main": "app.js",
+  "author": "mq@wepiao.com",
+  "scripts": {
+    "pepper": "pepper",
+    "cp_index": "cp ./dist/tld/index.html ./dist",
+    "start": "pepper start",
+    "test": "pepper test && npm run cp_index",
+    "pre": "pepper pre && npm run cp_index",
+    "release": "pepper release && npm run cp_index"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "express": "^4.12.3",
+    "fbjs": "^0.8.3",
+    "fecha": "^2.1.0",
+    "history": "^2.1.1",
+    "iscroll": "^5.2.0",
+    "js-cookie": "^2.1.0",
+    "object-assign": "^4.1.0",
+    "promise-polyfill": "^5.2.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.2.1",
+    "react-router": "^2.0.0",
+    "react-router-redux": "^4.0.0",
+    "react-slick": "^0.12.2",
+    "redux": "^3.2.1",
+    "redux-logger": "^2.4.0",
+    "redux-router": "^0.1.0",
+    "redux-thunk": "^2.1.0",
+    "reqwest": "^2.0.5",
+    "store": "^1.3.20",
+    "vision-ui": "^1.1.26",
+    "vision-ui-ext": "^1.2.3"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "enzyme": "^2.0.0",
+    "nyc": "^6.4.3"
+  }
+}

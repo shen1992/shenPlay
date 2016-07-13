@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="QQ电影票,电影,最新电影,电影票,即将上映电影,好看的电影,在线买电影票,电影票预订,选座购票,电影票团购,兑换券">
+    <meta name="description" itemprop="description" id="meta-description" content="QQ电影票是QQ电影票官方手机版，提供超过3000家影院的在线购票服务，是目前全国覆盖影院最多的选座购票平台。">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta itemprop="name" content="手机QQ电影票，在线购票占好座" id="meta-title">
+    <meta itemprop="image" content="//mqqstatic.wepiao.com/css/img/share.png">
+    <meta property="qc:admins" content="21517273436750117637571645060454">
+    {% if (o.htmlWebpackPlugin.files.favicon) { %}
+    <link rel="shortcut icon" href="{%=o.htmlWebpackPlugin.files.favicon%}">
+    {% } %}
+    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+    {% } %}
+    {% if(o.chunkManifest) { %}
+    <script>{%#o.chunkManifest%};</script>
+    {% } %}
+    <title>{%=o.htmlWebpackPlugin.options.title || '微票儿 - QQ电影票'%}</title>
+    <!-- <script>window.onerror = function (e, a, b) {alert(JSON.stringify(e+a+b))}</script> -->
+</head>
+
+<body>
+<div id="app">
+</div>
+{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+<script type="text/javascript" src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry%}"></script>
+{% } %}
+</body>
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script', '//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-64909736-1', 'auto');</script>
+<!-- <script src="http://hawkeye.wepiao.com/he.js" defer></script> -->
+</html>
