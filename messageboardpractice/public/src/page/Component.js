@@ -2,9 +2,8 @@
  * Created by Administrator on 2016/9/19.
  */
 import React from 'react'
-import ReactDom from 'react-dom'
 
-class App extends React.Component{
+export default class App extends React.Component{
     render() {
         return(
                <div>
@@ -89,8 +88,4 @@ class UserInput extends React.Component {
     }
 }
 
-ReactDom.render(
-    <App />,
-    document.getElementById('app')
-)
 

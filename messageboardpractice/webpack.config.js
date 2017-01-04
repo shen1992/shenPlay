@@ -2,10 +2,10 @@
  * Created by Administrator on 2016/4/6.
  */
 module.exports = {
-    entry: './public/src/js/Component.js',
+    entry: './public/src/page/index.js',
     output: {
         filename: 'bundle.js',
-        path: 'public/src/js'
+        path: 'public/js'
     },
     module: {
         loaders: [{
