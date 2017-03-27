@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height: 100%;
+        }
+        .bar {
+            height: 40px;
+            width: 260px;
+            background: #ecf0f3;
+            border-radius: 100px;
+            margin: 0 auto;
+            margin-top: 50%;
+            display: flex;
+        }
+        .slider {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: #fff;
+            box-shadow:0 0 8px 0 rgba(0,0,0,0.06), 0 6px 10px 0 rgba(0,0,0,0.12);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .panel {
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            width: 180px;
+            position: relative;
+        }
+        .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .one {
+            background:#8d4ce4;
+        }
+        .two {
+            background:#e44c4c;
+        }
+        .three {
+            background:#4ce4b1;
+        }
+        .four {
+            background:#e4e14c;
+        }
+        .five {
+            background:#3d3d3d;
+        }
+        .sex {
+            background:#4cbae4;
+        }
+    </style>
+</head>
+<body>
+<div class="bar">
+    <div class="panel">
+        <div class="slider" id="slider"></div>
+        <div style="height: 100%;width: 16%;" class="flex-center" >
+            <div class="one circle"></div>
+        </div>
+        <div style="height: 100%;width: 17%;" class="flex-center">
+            <div class="two circle"></div>
+        </div>
+        <div style="height: 100%;width: 17%;" class="flex-center">
+            <div class="three circle"></div>
+        </div>
+        <div style="height: 100%;width: 18%;" class="flex-center">
+            <div class="four circle"></div>
+        </div>
+        <div style="height: 100%;width: 18%;" class="flex-center">
+            <div class="five circle"></div>
+        </div>
+        <div style="height: 100%;width: 14%;" class="flex-center">
+            <div class="sex circle"></div>
+        </div>
+    </div>
+</div>
+<script src="./bundle.js"></script> <!-- 在 index.html 文件中添加这一行代码 -->
+</body>
+</html>
