@@ -1,0 +1,22 @@
+{
+  "apps" : [
+    {
+      "name"      : "hong",
+      "script"    : "hong.js",
+      "exec_mode" : "fork",
+      "instance"  : "1",
+      "cwd"       : "/Users/shenyuan/ws/hong/hua",
+      "watch"     : true,
+      "env": {
+        "COMMON_VARIABLE" : "true",
+        "DEBUG" : "hong:*"
+      },
+      "env_production" : {
+        "NODE_ENV" : "production"
+      },
+      "log_date_format" : "YY-M-D H:mm:ss",
+      "max_restarts"    : 3,
+      "autorestart"     : false
+    }
+  ]
+}
