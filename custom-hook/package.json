@@ -1,0 +1,16 @@
+{
+  "name": "custom-hook",
+  "version": "0.0.0",
+  "description": "A React project created by fle-cli.",
+  "keywords": [
+    "fle",
+    "webpack",
+    "react"
+  ],
+  "author": "梁耀光 <liangyaoguang@corp.neteast.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
