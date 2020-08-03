@@ -1,0 +1,14 @@
+{
+  "title": "获取之前的state",
+  "description": "",
+  "keywords": "",
+  "template": "/pc/default.html",
+  "filename": "html/use-previous.html",
+  "icon": "/favicon.ico",
+  "prejs": [],
+  "css": [
+    "https://easyreadfs.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/@axe/rem-resize-0.3.0/lib/index.css"
+  ],
+  "js": [],
+  "compiled": true
+}
