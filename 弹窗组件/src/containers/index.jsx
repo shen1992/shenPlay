@@ -5,7 +5,7 @@ import style from './style.scss';
 
 let instance =[];
 
-//组件
+//组件1
 export default class Modal extends React.Component {
 
     onClickMask = () => {
@@ -42,11 +42,11 @@ export default class Modal extends React.Component {
                     }
                     <div className="Modal_content">{ this.props.children }</div>
                     <footer className="Modal_footer" >
-                        {this.props.okText ? 
-                            <span onClick={ () => this.closeModal() }>{this.props.okText}</span> 
-                            : 
+                        {this.props.okText ?
+                            <span onClick={ () => this.closeModal() }>{this.props.okText}</span>
+                            :
                             null}
-                        { this.props.cancel ? this.props.cancel : null } 
+                        { this.props.cancel ? this.props.cancel : null }
                     </footer>
                 </div>
             </div>
